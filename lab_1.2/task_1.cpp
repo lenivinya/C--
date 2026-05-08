@@ -5,8 +5,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     char letter; // переменная для введённой буквы
     int shift; // количество позиций для сдвига
 
@@ -21,7 +20,6 @@ int main()
         letter = 'a' + (letter - 'a' + shift) % 26; // сдвигаем строчную букву по модулю 26
     } 
     else if ((letter >= 'A' && letter <= 'Z')) { // сдвигаем заглавную букву по модулю 26
-        
         letter = 'A' + (letter - 'A' + shift) % 26;
     } 
     else {
